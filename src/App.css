@@ -1,0 +1,60 @@
+/* App-specific styles */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: #ffa12e;
+  color: #111111;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #ffa12e;
+  outline-offset: 2px;
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Clip path utilities */
+.clip-path-full {
+  clip-path: inset(0 0 0 0);
+}
+
+.clip-path-hidden {
+  clip-path: inset(0 100% 0 0);
+}
+
+/* Duration utilities */
+.duration-1500 {
+  transition-duration: 1500ms;
+}
+
+.duration-1200 {
+  transition-duration: 1200ms;
+}
+
+.duration-600 {
+  transition-duration: 600ms;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
