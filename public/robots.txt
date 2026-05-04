@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://conveyortrack.co.za/sitemap.xml
