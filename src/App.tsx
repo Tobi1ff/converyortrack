@@ -1,5 +1,4 @@
 import './App.css';
-import { HelmetProvider } from 'react-helmet-async';
 import { Navigation } from './sections/Navigation';
 import { Hero } from './sections/Hero';
 import { About } from './sections/About';
@@ -13,22 +12,20 @@ import { Footer } from './sections/Footer';
 
 function App() {
   return (
-    <HelmetProvider>
-      <div className="min-h-screen bg-brand-concrete">
-        <Navigation />
-        <main>
-          <Hero />
-          <About />
-          <Services />
-          <Products />
-          <Gallery />
-          <Goals />
-          <Contact />
-          <LogoBanner />
-        </main>
-        <Footer />
-      </div>
-    </HelmetProvider>
+    <div className="min-h-screen bg-brand-concrete">
+      <Navigation />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Products />
+        <Gallery />
+        <Goals />
+        <Contact />
+        <LogoBanner />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
