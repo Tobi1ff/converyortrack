@@ -70,7 +70,7 @@ export function Hero() {
 
             {/* Heading */}
             <h1
-              className={`font-condensed text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-none tracking-tight transition-all duration-1000 ${
+              className={`font-condensed text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-brand-dark leading-none tracking-tight transition-all duration-1000 ${
                 isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
               }`}
               style={{ transitionDelay: '0.2s' }}
@@ -87,7 +87,7 @@ export function Hero() {
             </h1>
 
             <p
-              className={`text-lg sm:text-xl text-gray-300 mb-8 max-w-lg transition-all duration-800 ${
+              className={`text-lg sm:text-xl text-brand-dark mb-8 max-w-lg transition-all duration-800 ${
                 isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
               style={{ transitionDelay: '0.6s' }}
