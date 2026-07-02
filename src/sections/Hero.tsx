@@ -104,7 +104,7 @@ export function Hero() {
             >
               <Button
                 size="lg"
-                className="bg-brand-orange hover:bg-brand-orange/90 text-white font-condensed text-lg px-8 py-6 animate-pulse-glow"
+                className="bg-brand-orange hover:bg-black text-white font-condensed text-lg px-8 py-6 animate-pulse-glow"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 DISCOVER OUR SERVICES
@@ -114,7 +114,7 @@ export function Hero() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-gray-500/50 text-gray-300 hover:border-white/50 hover:text-white hover:bg-white/10 font-condensed text-lg px-8 py-6"
+                className="border-white text-white hover:border-brand-orange hover:text-brand-orange hover:bg-white/10 font-condensed text-lg px-8 py-6"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 CONTACT US
