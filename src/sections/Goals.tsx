@@ -44,7 +44,7 @@ export function Goals() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-brand-orange overflow-hidden"
+      className="relative py-24 lg:py-32 bg-brand-yellow overflow-hidden"
     >
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
@@ -86,7 +86,7 @@ export function Goals() {
                 }`}
                 style={{ transitionDelay: '0.3s' }}
               >
-                <p className="font-condensed text-2xl font-bold text-brand-orange mb-2">
+                <p className="font-condensed text-2xl font-bold text-brand-yellow mb-2">
                   "Empowering Progress, One Conveyor at a Time"
                 </p>
                 <p className="text-gray-400 text-sm">
@@ -105,8 +105,8 @@ export function Goals() {
                   }`}
                   style={{ transitionDelay: `${0.4 + index * 0.1}s` }}
                 >
-                  <div className="w-14 h-14 bg-brand-orange flex items-center justify-center flex-shrink-0 group-hover:bg-brand-dark transition-colors duration-300">
-                    <goal.icon className="h-7 w-7 text-brand-dark group-hover:text-brand-orange transition-colors duration-300" />
+                  <div className="w-14 h-14 bg-brand-yellow flex items-center justify-center flex-shrink-0 group-hover:bg-brand-dark transition-colors duration-300">
+                    <goal.icon className="h-7 w-7 text-brand-dark group-hover:text-brand-yellow transition-colors duration-300" />
                   </div>
                   <div>
                     <h3 className="font-condensed text-xl font-bold text-brand-dark mb-2">

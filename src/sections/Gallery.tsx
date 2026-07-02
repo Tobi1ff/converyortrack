@@ -79,7 +79,7 @@ export function Gallery() {
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
               <div>
                 <div
-                  className={`inline-block bg-brand-orange text-brand-dark px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
+                  className={`inline-block bg-brand-yellow text-brand-dark px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
                     isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
                   }`}
                 >
@@ -100,7 +100,7 @@ export function Gallery() {
                 }`}
                 style={{ transitionDelay: '0.2s' }}
               >
-                <Camera className="inline-block h-5 w-5 text-brand-orange mr-2" />
+                <Camera className="inline-block h-5 w-5 text-brand-yellow mr-2" />
                 Real shots from the field - our team in action
               </p>
             </div>
@@ -140,9 +140,9 @@ export function Gallery() {
                     loading="lazy"
                   />
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-brand-orange/0 group-hover:bg-brand-orange/20 transition-colors duration-300" />
+                  <div className="absolute inset-0 bg-brand-yellow/0 group-hover:bg-brand-yellow/20 transition-colors duration-300" />
                   {/* Corner Accent */}
-                  <div className="absolute bottom-0 right-0 w-0 h-0 border-l-[40px] border-l-transparent border-b-[40px] border-b-brand-orange opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 right-0 w-0 h-0 border-l-[40px] border-l-transparent border-b-[40px] border-b-brand-yellow opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
               ))}
             </div>
@@ -182,9 +182,9 @@ export function Gallery() {
                     loading="lazy"
                   />
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-brand-orange/0 group-hover:bg-brand-orange/20 transition-colors duration-300" />
+                  <div className="absolute inset-0 bg-brand-yellow/0 group-hover:bg-brand-yellow/20 transition-colors duration-300" />
                   {/* Corner Accent */}
-                  <div className="absolute bottom-0 left-0 w-0 h-0 border-r-[40px] border-r-transparent border-b-[40px] border-b-brand-orange opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 w-0 h-0 border-r-[40px] border-r-transparent border-b-[40px] border-b-brand-yellow opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
               ))}
             </div>
@@ -201,15 +201,15 @@ export function Gallery() {
               style={{ transitionDelay: '0.7s' }}
             >
               <div className="text-center">
-                <div className="font-condensed text-4xl sm:text-5xl font-bold text-brand-orange">17+</div>
+                <div className="font-condensed text-4xl sm:text-5xl font-bold text-brand-yellow">17+</div>
                 <div className="text-gray-400 text-sm">Projects Documented</div>
               </div>
               <div className="text-center">
-                <div className="font-condensed text-4xl sm:text-5xl font-bold text-brand-orange">24/7</div>
+                <div className="font-condensed text-4xl sm:text-5xl font-bold text-brand-yellow">24/7</div>
                 <div className="text-gray-400 text-sm">Site Operations</div>
               </div>
               <div className="text-center">
-                <div className="font-condensed text-4xl sm:text-5xl font-bold text-brand-orange">100%</div>
+                <div className="font-condensed text-4xl sm:text-5xl font-bold text-brand-yellow">100%</div>
                 <div className="text-gray-400 text-sm">Safety Compliant</div>
               </div>
             </div>

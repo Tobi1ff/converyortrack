@@ -31,14 +31,14 @@ export function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-brand-orange flex items-center justify-center">
+                <div className="w-10 h-10 bg-brand-yellow flex items-center justify-center">
                   <MoveRight className="h-6 w-6 text-brand-dark" />
                 </div>
                 <div>
                   <h3 className="font-condensed text-2xl font-bold text-white">
                     CONVEYOR TRACK
                   </h3>
-                  <p className="text-brand-orange text-xs font-condensed">
+                  <p className="text-brand-yellow text-xs font-condensed">
                     PTY LTD
                   </p>
                 </div>
@@ -47,7 +47,7 @@ export function Footer() {
                 Empowering Progress, One Conveyor at a Time. We are driven by a passion for delivering exceptional quality, service, and value to the industries we serve.
               </p>
               <div className="flex items-center gap-4">
-                <div className="bg-brand-orange text-brand-dark px-4 py-2 font-condensed font-bold text-sm">
+                <div className="bg-brand-yellow text-brand-dark px-4 py-2 font-condensed font-bold text-sm">
                   LEVEL 1 BBBEE
                 </div>
                 <div className="text-gray-500 text-sm">
@@ -66,7 +66,7 @@ export function Footer() {
                   <li key={link.label}>
                     <button
                       onClick={() => scrollToSection(link.href)}
-                      className="text-gray-400 hover:text-brand-orange transition-colors duration-300"
+                      className="text-gray-400 hover:text-brand-yellow transition-colors duration-300"
                     >
                       {link.label}
                     </button>
@@ -100,7 +100,7 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-6">
             <span className="text-gray-500 text-sm">
-              Emergency: <span className="text-brand-orange font-bold">+27 64 986 5970</span>
+              Emergency: <span className="text-brand-yellow font-bold">+27 64 986 5970</span>
             </span>
           </div>
         </div>

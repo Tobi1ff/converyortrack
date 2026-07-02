@@ -65,7 +65,7 @@ export function Navigation() {
                 <button
                   key={link.label}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-white/80 hover:text-brand-orange font-condensed text-sm tracking-wider transition-colors duration-300"
+                  className="text-white/80 hover:text-brand-yellow font-condensed text-sm tracking-wider transition-colors duration-300"
                 >
                   {link.label.toUpperCase()}
                 </button>
@@ -76,7 +76,7 @@ export function Navigation() {
             <div className="flex items-center gap-4">
               <a
                 href="tel:+27649865970"
-                className="hidden sm:flex items-center gap-2 bg-brand-orange text-brand-dark px-4 py-2 font-condensed font-bold text-sm hover:bg-white transition-colors duration-300"
+                className="hidden sm:flex items-center gap-2 bg-brand-yellow text-brand-dark px-4 py-2 font-condensed font-bold text-sm hover:bg-white transition-colors duration-300"
               >
                 <Phone className="h-4 w-4" />
                 064 986 5970
@@ -120,7 +120,7 @@ export function Navigation() {
               <button
                 key={link.label}
                 onClick={() => scrollToSection(link.href)}
-                className="block w-full text-left text-white font-condensed text-xl py-3 border-b border-white/10 hover:text-brand-orange transition-colors duration-300"
+                className="block w-full text-left text-white font-condensed text-xl py-3 border-b border-white/10 hover:text-brand-yellow transition-colors duration-300"
                 style={{
                   animationDelay: `${index * 0.1}s`,
                 }}
@@ -130,7 +130,7 @@ export function Navigation() {
             ))}
             <a
               href="tel:+27649865970"
-              className="flex items-center justify-center gap-2 bg-brand-orange text-brand-dark px-6 py-4 font-condensed font-bold mt-6"
+              className="flex items-center justify-center gap-2 bg-brand-yellow text-brand-dark px-6 py-4 font-condensed font-bold mt-6"
             >
               <Phone className="h-5 w-5" />
               CALL NOW: 064 986 5970

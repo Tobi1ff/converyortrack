@@ -50,7 +50,7 @@ export function Products() {
     <section
       id="products"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-brand-concrete overflow-hidden"
+      className="relative py-24 lg:py-32 bg-brand-dark overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0 opacity-5">
@@ -90,7 +90,7 @@ export function Products() {
           {/* Section Header */}
           <div className="mb-16 text-center">
             <div
-              className={`inline-block bg-brand-orange text-brand-dark px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
+              className={`inline-block bg-brand-yellow text-brand-dark px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
             >
@@ -128,7 +128,7 @@ export function Products() {
               >
                 {/* Hover Background */}
                 <div
-                  className={`absolute inset-0 bg-brand-orange transition-transform duration-500 origin-bottom ${
+                  className={`absolute inset-0 bg-brand-yellow transition-transform duration-500 origin-bottom ${
                     hoveredIndex === index ? 'scale-y-100' : 'scale-y-0'
                   }`}
                 />
@@ -137,12 +137,12 @@ export function Products() {
                 <div className="relative p-8">
                   <div
                     className={`w-16 h-16 flex items-center justify-center mb-6 transition-all duration-300 ${
-                      hoveredIndex === index ? 'bg-brand-dark' : 'bg-brand-orange/10'
+                      hoveredIndex === index ? 'bg-brand-dark' : 'bg-brand-yellow/10'
                     }`}
                   >
                     <product.icon
                       className={`h-8 w-8 transition-colors duration-300 ${
-                        hoveredIndex === index ? 'text-brand-orange' : 'text-brand-orange'
+                        hoveredIndex === index ? 'text-brand-yellow' : 'text-brand-yellow'
                       }`}
                     />
                   </div>
@@ -185,7 +185,7 @@ export function Products() {
               Need a specific part? We can source specialized components for your equipment.
             </p>
             <button
-              className="inline-flex items-center gap-2 bg-brand-dark text-white px-8 py-4 font-condensed font-bold hover:bg-brand-orange hover:text-brand-dark transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-brand-dark text-white px-8 py-4 font-condensed font-bold hover:bg-brand-yellow hover:text-brand-dark transition-all duration-300"
               onClick={() => {
                 const contactSection = document.getElementById('contact');
                 contactSection?.scrollIntoView({ behavior: 'smooth' });

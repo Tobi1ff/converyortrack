@@ -132,7 +132,7 @@ export function Contact() {
           {/* Section Header */}
           <div className="mb-16">
             <div
-              className={`inline-block bg-brand-orange text-brand-dark px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
+              className={`inline-block bg-brand-yellow text-brand-dark px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
             >
@@ -171,12 +171,12 @@ export function Contact() {
                   >
                     <div
                       className={`w-12 h-12 flex items-center justify-center flex-shrink-0 ${
-                        info.highlight ? 'bg-brand-orange' : 'bg-white/10'
+                        info.highlight ? 'bg-brand-yellow' : 'bg-white/10'
                       }`}
                     >
                       <info.icon
                         className={`h-5 w-5 ${
-                          info.highlight ? 'text-brand-dark' : 'text-brand-orange'
+                          info.highlight ? 'text-brand-dark' : 'text-brand-yellow'
                         }`}
                       />
                     </div>
@@ -184,7 +184,7 @@ export function Contact() {
                       <div className="text-gray-500 text-sm mb-1">{info.label}</div>
                       <div
                         className={`font-medium ${
-                          info.highlight ? 'text-brand-orange text-lg' : 'text-white'
+                          info.highlight ? 'text-brand-yellow text-lg' : 'text-white'
                         }`}
                       >
                         {info.value}
@@ -239,7 +239,7 @@ export function Contact() {
                       id="name"
                       name="name"
                       placeholder="Your name"
-                      className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-orange focus:ring-brand-orange"
+                      className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-yellow focus:ring-brand-yellow"
                       required
                     />
                   </div>
@@ -252,7 +252,7 @@ export function Contact() {
                       name="email"
                       type="email"
                       placeholder="your@email.com"
-                      className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-orange focus:ring-brand-orange"
+                      className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-yellow focus:ring-brand-yellow"
                       required
                     />
                   </div>
@@ -267,7 +267,7 @@ export function Contact() {
                     name="phone"
                     type="tel"
                     placeholder="Your phone number"
-                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-orange focus:ring-brand-orange"
+                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-yellow focus:ring-brand-yellow"
                   />
                 </div>
 
@@ -280,7 +280,7 @@ export function Contact() {
                     name="message"
                     placeholder="How can we help you?"
                     rows={5}
-                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-orange focus:ring-brand-orange resize-none"
+                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-yellow focus:ring-brand-yellow resize-none"
                     required
                   />
                 </div>
@@ -293,7 +293,7 @@ export function Contact() {
                       ? 'bg-green-500 hover:bg-green-500 text-white'
                       : hasError
                       ? 'bg-red-500 hover:bg-red-500 text-white'
-                      : 'bg-brand-orange hover:bg-white text-brand-dark'
+                      : 'bg-brand-yellow hover:bg-white text-brand-dark'
                   }`}
                 >
                   {isSubmitting ? (

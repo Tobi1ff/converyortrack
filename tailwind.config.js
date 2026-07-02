@@ -40,11 +40,12 @@ module.exports = {
         },
         // Brand colors
         brand: {
-          orange: "#ffa12e",
-          dark: "#111111",
-          light: "#fafafa",
-          gray: "#6a6a6a",
-          concrete: "#f9f9f9",
+          yellow: "#fcd116", // Safety Machinery Yellow
+          red: "#e31b23",    // Industrial Warning Red
+          dark: "#000000",   // Coal Black
+          light: "#f9fafb",  // Bright Light Gray
+          gray: "#374151",   // Dark Charcoal Gray
+          concrete: "#ffffff", // Pure White
         },
       },
       fontFamily: {

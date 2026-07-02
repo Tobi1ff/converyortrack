@@ -50,7 +50,7 @@ export function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-brand-concrete overflow-hidden"
+      className="relative py-24 lg:py-32 bg-brand-dark overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0 opacity-10">
@@ -81,7 +81,7 @@ export function About() {
           {/* Section Header */}
           <div className="mb-16">
             <div
-              className={`inline-block bg-brand-orange text-brand-dark px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
+              className={`inline-block bg-brand-yellow text-brand-dark px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
             >
@@ -110,18 +110,18 @@ export function About() {
                 <strong className="text-brand-dark">Conveyor Track Pty Ltd</strong> is a leading supplier of conveyor belts and provider of conveyor plant repair and maintenance services. We cater to the needs of various industries, including mining, manufacturing, and logistics.
               </p>
               <p className="text-lg text-brand-gray leading-relaxed mb-8">
-                Founded by <strong className="text-brand-dark">Mr. Mona Prince Mbatini</strong>, a visionary entrepreneur with a passion for delivering exceptional quality and service, our company is committed to excellence and dedicated to making a positive impact in the industries we serve.
+                Founded by <strong className="text-brand-dark">Mr. Mona Prince Mbatini</strong> (pictured right), a visionary entrepreneur with a passion for delivering exceptional quality and service, our company is committed to excellence and dedicated to making a positive impact in the industries we serve.
               </p>
 
               {/* Mission & Vision */}
               <div className="space-y-6">
-                <div className="border-l-4 border-brand-orange pl-6">
+                <div className="border-l-4 border-brand-yellow pl-6">
                   <h3 className="font-condensed text-xl font-bold text-brand-dark mb-2">OUR MISSION</h3>
                   <p className="text-brand-gray">
                     To deliver high-quality products and services that meet the evolving needs of our customers, while ensuring a safe and reliable working environment.
                   </p>
                 </div>
-                <div className="border-l-4 border-brand-orange pl-6">
+                <div className="border-l-4 border-brand-yellow pl-6">
                   <h3 className="font-condensed text-xl font-bold text-brand-dark mb-2">OUR VISION</h3>
                   <p className="text-brand-gray">
                     To be the preferred supplier of conveyor belt products and services in the region, recognized for our commitment to quality, reliability, and customer satisfaction.
@@ -139,8 +139,8 @@ export function About() {
             >
               <div className="relative h-full min-h-[400px] overflow-hidden">
                 <img
-                  src="/about-bg.jpg"
-                  alt="Conveyor belt rollers"
+                  src="/the-ceo.jpg"
+                  alt="Mr. Mona Prince Mbatini, Founder"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 to-transparent" />
@@ -149,11 +149,11 @@ export function About() {
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white/10 backdrop-blur-sm p-4">
-                      <div className="font-condensed text-3xl font-bold text-brand-orange">Level 1</div>
+                      <div className="font-condensed text-3xl font-bold text-brand-yellow">Level 1</div>
                       <div className="text-white text-sm">BBBEE Certified</div>
                     </div>
                     <div className="bg-white/10 backdrop-blur-sm p-4">
-                      <div className="font-condensed text-3xl font-bold text-brand-orange">24/7</div>
+                      <div className="font-condensed text-3xl font-bold text-brand-yellow">24/7</div>
                       <div className="text-white text-sm">Emergency Support</div>
                     </div>
                   </div>
@@ -181,8 +181,8 @@ export function About() {
                   }`}
                   style={{ transitionDelay: `${0.5 + index * 0.1}s` }}
                 >
-                  <div className="w-14 h-14 bg-brand-orange/10 flex items-center justify-center mb-4">
-                    <value.icon className="h-7 w-7 text-brand-orange icon-flip" />
+                  <div className="w-14 h-14 bg-brand-yellow/10 flex items-center justify-center mb-4">
+                    <value.icon className="h-7 w-7 text-brand-yellow icon-flip" />
                   </div>
                   <h4 className="font-condensed text-xl font-bold text-brand-dark mb-2">
                     {value.title}

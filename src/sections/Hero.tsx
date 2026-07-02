@@ -59,7 +59,7 @@ export function Hero() {
           <div className="max-w-2xl">
             {/* Divider Line */}
             <div
-              className={`absolute top-0 w-px bg-gradient-to-b from-transparent via-brand-orange to-transparent transition-all duration-1200 ${
+              className={`absolute top-0 w-px bg-gradient-to-b from-transparent via-brand-yellow to-transparent transition-all duration-1200 ${
                 isLoaded ? 'h-full opacity-100' : 'h-0 opacity-0'
               }`}
               style={{
@@ -78,7 +78,7 @@ export function Hero() {
               CONVEYOR
             </h1>
             <h1
-              className={`font-condensed text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-brand-orange leading-none tracking-tight transition-all duration-1000 ${
+              className={`font-condensed text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-brand-yellow leading-none tracking-tight transition-all duration-1000 ${
                 isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
               }`}
               style={{ transitionDelay: '0.4s' }}
@@ -104,7 +104,7 @@ export function Hero() {
             >
               <Button
                 size="lg"
-                className="bg-brand-orange hover:bg-brand-orange/90 text-white font-condensed text-lg px-8 py-6 animate-pulse-glow"
+                className="bg-brand-yellow hover:bg-brand-yellow/90 text-white font-condensed text-lg px-8 py-6 animate-pulse-glow"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 DISCOVER OUR SERVICES
@@ -136,11 +136,11 @@ export function Hero() {
               style={{ transitionDelay: '1s' }}
             >
               <div className="flex items-center gap-2 text-white">
-                <Phone className="h-5 w-5 text-brand-orange" />
+                <Phone className="h-5 w-5 text-brand-yellow" />
                 <span className="font-medium">064 986 5970</span>
               </div>
               <div className="h-4 w-px bg-white/30" />
-              <span className="text-brand-orange font-condensed text-sm">24/7 EMERGENCY LINE</span>
+              <span className="text-brand-yellow font-condensed text-sm">24/7 EMERGENCY LINE</span>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ export function Hero() {
       {/* Scroll Indicator */}
       <button
         onClick={scrollToAbout}
-        className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 hover:text-brand-orange transition-all duration-500 cursor-pointer ${
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 hover:text-brand-yellow transition-all duration-500 cursor-pointer ${
           isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
         style={{ transitionDelay: '1.2s' }}
@@ -160,7 +160,7 @@ export function Hero() {
 
       {/* BBBEE Badge - Centered on Mobile, Top Right on Desktop */}
       <div
-        className={`absolute top-8 left-1/2 -translate-x-1/2 md:left-auto md:right-8 md:translate-x-0 bg-brand-orange text-brand-dark px-4 py-2 font-condensed font-bold text-sm transition-all duration-800 ${
+        className={`absolute top-8 left-1/2 -translate-x-1/2 md:left-auto md:right-8 md:translate-x-0 bg-brand-yellow text-brand-dark px-4 py-2 font-condensed font-bold text-sm transition-all duration-800 ${
           isLoaded ? 'opacity-100' : 'opacity-0 -translate-y-4'
         }`}
         style={{ transitionDelay: '1s' }}
