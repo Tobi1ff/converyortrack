@@ -105,7 +105,7 @@ export function Products() {
               OUR PRODUCTS
             </h2>
             <p
-              className={`text-lg text-brand-gray max-w-2xl mx-auto transition-all duration-800 ${
+              className={`text-lg text-brand-dark max-w-2xl mx-auto transition-all duration-800 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
               style={{ transitionDelay: '0.2s' }}
@@ -157,7 +157,7 @@ export function Products() {
 
                   <p
                     className={`text-sm transition-colors duration-300 ${
-                      hoveredIndex === index ? 'text-brand-concrete/80' : 'text-brand-gray'
+                      hoveredIndex === index ? 'text-brand-concrete/80' : 'text-brand-dark'
                     }`}
                   >
                     {product.description}
@@ -181,7 +181,7 @@ export function Products() {
             }`}
             style={{ transitionDelay: '0.8s' }}
           >
-            <p className="text-brand-gray mb-4">
+            <p className="text-brand-dark mb-4">
               Need a specific part? We can source specialized components for your equipment.
             </p>
             <button
