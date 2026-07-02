@@ -49,7 +49,7 @@ export function Services() {
     <section
       id="services"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-brand-dark overflow-hidden"
+      className="relative py-24 lg:py-32 bg-brand-concrete overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0 opacity-20">
@@ -58,7 +58,7 @@ export function Services() {
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-dark via-transparent to-brand-dark" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-concrete via-transparent to-brand-concrete" />
       </div>
 
       {/* Grain Overlay */}
@@ -69,7 +69,7 @@ export function Services() {
           {/* Section Header */}
           <div className="mb-16">
             <div
-              className={`inline-block bg-brand-yellow text-brand-dark px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
+              className={`inline-block bg-brand-orange text-brand-concrete px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
             >
@@ -109,19 +109,19 @@ export function Services() {
                   <div
                     className={`p-6 border-l-4 transition-all duration-300 ${
                       activeService === index
-                        ? 'bg-white/10 border-brand-yellow'
+                        ? 'bg-white/10 border-brand-orange'
                         : 'bg-transparent border-white/20 hover:bg-white/5 hover:border-white/40'
                     }`}
                   >
                     <div className="flex items-start gap-4">
                       <div
                         className={`w-12 h-12 flex items-center justify-center transition-all duration-300 ${
-                          activeService === index ? 'bg-brand-yellow' : 'bg-white/10'
+                          activeService === index ? 'bg-brand-orange' : 'bg-white/10'
                         }`}
                       >
                         <service.icon
                           className={`h-6 w-6 transition-colors duration-300 ${
-                            activeService === index ? 'text-brand-dark' : 'text-white'
+                            activeService === index ? 'text-brand-concrete' : 'text-white'
                           }`}
                         />
                       </div>
@@ -148,10 +148,10 @@ export function Services() {
             >
               <div className="bg-white/5 backdrop-blur-sm p-8 border border-white/10">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-brand-yellow flex items-center justify-center">
+                  <div className="w-16 h-16 bg-brand-orange flex items-center justify-center">
                     {(() => {
                       const IconComponent = services[activeService].icon;
-                      return <IconComponent className="h-8 w-8 text-brand-dark" />;
+                      return <IconComponent className="h-8 w-8 text-brand-concrete" />;
                     })()}
                   </div>
                   <h3 className="font-condensed text-2xl font-bold text-white">
@@ -164,7 +164,7 @@ export function Services() {
                 </p>
 
                 <div className="space-y-3">
-                  <h4 className="font-condensed text-sm font-bold text-brand-yellow uppercase tracking-wider">
+                  <h4 className="font-condensed text-sm font-bold text-brand-orange uppercase tracking-wider">
                     Key Features
                   </h4>
                   {services[activeService].features.map((feature, idx) => (
@@ -176,7 +176,7 @@ export function Services() {
                         opacity: 0,
                       }}
                     >
-                      <CheckCircle className="h-5 w-5 text-brand-yellow flex-shrink-0" />
+                      <CheckCircle className="h-5 w-5 text-brand-orange flex-shrink-0" />
                       <span>{feature}</span>
                     </div>
                   ))}
@@ -186,18 +186,18 @@ export function Services() {
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="text-sm text-gray-400">Emergency Line</div>
-                      <div className="text-xl font-bold text-brand-yellow">+27 64 986 5970</div>
+                      <div className="text-xl font-bold text-brand-orange">+27 64 986 5970</div>
                     </div>
                     <a
                       href="/ConveyorTrack_MineShield_Brochure_with_Email-1.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-white text-brand-dark px-6 py-3 font-condensed font-bold hover:bg-gray-200 transition-colors duration-300"
+                      className="bg-white text-brand-concrete px-6 py-3 font-condensed font-bold hover:bg-gray-200 transition-colors duration-300"
                     >
                       DOWNLOAD BROCHURE
                     </a>
                     <button
-                      className="bg-brand-yellow text-brand-dark px-6 py-3 font-condensed font-bold hover:bg-white transition-colors duration-300"
+                      className="bg-brand-orange text-brand-concrete px-6 py-3 font-condensed font-bold hover:bg-white transition-colors duration-300"
                       onClick={() => {
                         const contactSection = document.getElementById('contact');
                         contactSection?.scrollIntoView({ behavior: 'smooth' });

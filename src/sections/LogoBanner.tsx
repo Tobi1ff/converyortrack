@@ -1,6 +1,6 @@
 export function LogoBanner() {
   return (
-    <section className="bg-brand-dark py-20 lg:py-28 flex items-center justify-center border-t border-white/5">
+    <section className="bg-brand-concrete py-20 lg:py-28 flex items-center justify-center border-t border-white/5">
       <div className="px-6 sm:px-8 lg:px-16 xl:px-24 w-full">
         <div className="max-w-3xl mx-auto flex items-center justify-center">
           <img

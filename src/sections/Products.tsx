@@ -50,7 +50,7 @@ export function Products() {
     <section
       id="products"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-brand-dark overflow-hidden"
+      className="relative py-24 lg:py-32 bg-brand-concrete overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0 opacity-5">
@@ -78,7 +78,7 @@ export function Products() {
               fill="none"
               stroke="currentColor"
               strokeWidth="0.5"
-              className="text-brand-dark"
+              className="text-brand-concrete"
             />
           </pattern>
         </defs>
@@ -90,14 +90,14 @@ export function Products() {
           {/* Section Header */}
           <div className="mb-16 text-center">
             <div
-              className={`inline-block bg-brand-yellow text-brand-dark px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
+              className={`inline-block bg-brand-orange text-brand-concrete px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
             >
               WHAT WE SUPPLY
             </div>
             <h2
-              className={`font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-dark mb-6 transition-all duration-800 ${
+              className={`font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-concrete mb-6 transition-all duration-800 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
               style={{ transitionDelay: '0.1s' }}
@@ -128,7 +128,7 @@ export function Products() {
               >
                 {/* Hover Background */}
                 <div
-                  className={`absolute inset-0 bg-brand-yellow transition-transform duration-500 origin-bottom ${
+                  className={`absolute inset-0 bg-brand-orange transition-transform duration-500 origin-bottom ${
                     hoveredIndex === index ? 'scale-y-100' : 'scale-y-0'
                   }`}
                 />
@@ -137,19 +137,19 @@ export function Products() {
                 <div className="relative p-8">
                   <div
                     className={`w-16 h-16 flex items-center justify-center mb-6 transition-all duration-300 ${
-                      hoveredIndex === index ? 'bg-brand-dark' : 'bg-brand-yellow/10'
+                      hoveredIndex === index ? 'bg-brand-concrete' : 'bg-brand-orange/10'
                     }`}
                   >
                     <product.icon
                       className={`h-8 w-8 transition-colors duration-300 ${
-                        hoveredIndex === index ? 'text-brand-yellow' : 'text-brand-yellow'
+                        hoveredIndex === index ? 'text-brand-orange' : 'text-brand-orange'
                       }`}
                     />
                   </div>
 
                   <h3
                     className={`font-condensed text-xl font-bold mb-2 transition-colors duration-300 ${
-                      hoveredIndex === index ? 'text-brand-dark' : 'text-brand-dark'
+                      hoveredIndex === index ? 'text-brand-concrete' : 'text-brand-concrete'
                     }`}
                   >
                     {product.name}
@@ -157,7 +157,7 @@ export function Products() {
 
                   <p
                     className={`text-sm transition-colors duration-300 ${
-                      hoveredIndex === index ? 'text-brand-dark/80' : 'text-brand-gray'
+                      hoveredIndex === index ? 'text-brand-concrete/80' : 'text-brand-gray'
                     }`}
                   >
                     {product.description}
@@ -165,7 +165,7 @@ export function Products() {
 
                   {/* Animated Line */}
                   <div
-                    className={`absolute bottom-0 left-0 h-1 bg-brand-dark transition-all duration-500 ${
+                    className={`absolute bottom-0 left-0 h-1 bg-brand-concrete transition-all duration-500 ${
                       hoveredIndex === index ? 'w-full' : 'w-0'
                     }`}
                   />
@@ -185,7 +185,7 @@ export function Products() {
               Need a specific part? We can source specialized components for your equipment.
             </p>
             <button
-              className="inline-flex items-center gap-2 bg-brand-dark text-white px-8 py-4 font-condensed font-bold hover:bg-brand-yellow hover:text-brand-dark transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-brand-concrete text-white px-8 py-4 font-condensed font-bold hover:bg-brand-orange hover:text-brand-concrete transition-all duration-300"
               onClick={() => {
                 const contactSection = document.getElementById('contact');
                 contactSection?.scrollIntoView({ behavior: 'smooth' });

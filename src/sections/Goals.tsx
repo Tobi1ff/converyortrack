@@ -44,7 +44,7 @@ export function Goals() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-brand-yellow overflow-hidden"
+      className="relative py-24 lg:py-32 bg-brand-orange overflow-hidden"
     >
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
@@ -56,14 +56,14 @@ export function Goals() {
             {/* Left Content */}
             <div>
               <div
-                className={`inline-block bg-brand-dark text-white px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
+                className={`inline-block bg-brand-concrete text-white px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
                 }`}
               >
                 OUR COMMITMENT
               </div>
               <h2
-                className={`font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-dark mb-6 transition-all duration-800 ${
+                className={`font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-concrete mb-6 transition-all duration-800 ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
                 }`}
                 style={{ transitionDelay: '0.1s' }}
@@ -71,7 +71,7 @@ export function Goals() {
                 OUR GOALS
               </h2>
               <p
-                className={`text-lg text-brand-dark/80 mb-8 transition-all duration-800 ${
+                className={`text-lg text-brand-concrete/80 mb-8 transition-all duration-800 ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
                 }`}
                 style={{ transitionDelay: '0.2s' }}
@@ -81,12 +81,12 @@ export function Goals() {
 
               {/* Tagline */}
               <div
-                className={`bg-brand-dark text-white p-8 transition-all duration-800 ${
+                className={`bg-brand-concrete text-white p-8 transition-all duration-800 ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
                 }`}
                 style={{ transitionDelay: '0.3s' }}
               >
-                <p className="font-condensed text-2xl font-bold text-brand-yellow mb-2">
+                <p className="font-condensed text-2xl font-bold text-brand-orange mb-2">
                   "Empowering Progress, One Conveyor at a Time"
                 </p>
                 <p className="text-gray-400 text-sm">
@@ -105,11 +105,11 @@ export function Goals() {
                   }`}
                   style={{ transitionDelay: `${0.4 + index * 0.1}s` }}
                 >
-                  <div className="w-14 h-14 bg-brand-yellow flex items-center justify-center flex-shrink-0 group-hover:bg-brand-dark transition-colors duration-300">
-                    <goal.icon className="h-7 w-7 text-brand-dark group-hover:text-brand-yellow transition-colors duration-300" />
+                  <div className="w-14 h-14 bg-brand-orange flex items-center justify-center flex-shrink-0 group-hover:bg-brand-concrete transition-colors duration-300">
+                    <goal.icon className="h-7 w-7 text-brand-concrete group-hover:text-brand-orange transition-colors duration-300" />
                   </div>
                   <div>
-                    <h3 className="font-condensed text-xl font-bold text-brand-dark mb-2">
+                    <h3 className="font-condensed text-xl font-bold text-brand-concrete mb-2">
                       {goal.title}
                     </h3>
                     <p className="text-brand-gray text-sm leading-relaxed">
