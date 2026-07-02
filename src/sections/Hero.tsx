@@ -114,13 +114,13 @@ export function Hero() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:border-brand-orange hover:text-brand-orange hover:bg-white/10 font-condensed text-lg px-8 py-6"
+                className="border-brand-dark text-brand-dark hover:border-brand-orange hover:text-brand-orange hover:bg-brand-dark font-condensed text-lg px-8 py-6"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 CONTACT US
               </Button>
 
-              <Button asChild size="lg" className="bg-white text-brand-concrete hover:bg-gray-200 font-condensed text-lg px-8 py-6">
+              <Button asChild size="lg" className="bg-brand-dark text-white hover:bg-brand-orange hover:text-brand-dark font-condensed text-lg px-8 py-6">
                 <a href="/company-profile.pdf" download target="_blank" rel="noopener noreferrer">
                   DOWNLOAD COMPANY PROFILE
                   <Download className="ml-2 h-5 w-5" />
