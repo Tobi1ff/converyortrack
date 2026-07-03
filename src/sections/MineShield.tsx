@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { CheckCircle, ShieldCheck, Clock, Zap, DollarSign } from 'lucide-react';
 
 export function MineShield() {
