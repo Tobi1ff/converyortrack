@@ -4,6 +4,7 @@ import { Hero } from './sections/Hero';
 import { About } from './sections/About';
 import { Services } from './sections/Services';
 import { Products } from './sections/Products';
+import { MineShield } from './sections/MineShield';
 import { Gallery } from './sections/Gallery';
 import { Goals } from './sections/Goals';
 import { Contact } from './sections/Contact';
@@ -19,6 +20,7 @@ function App() {
         <About />
         <Services />
         <Products />
+        <MineShield />
         <Gallery />
         <Goals />
         <Contact />
