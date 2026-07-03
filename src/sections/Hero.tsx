@@ -135,12 +135,12 @@ export function Hero() {
               }`}
               style={{ transitionDelay: '1s' }}
             >
-              <div className="flex items-center gap-2 text-white">
+              <div className="flex items-center gap-2 text-brand-dark">
                 <Phone className="h-5 w-5 text-brand-orange" />
-                <span className="font-medium">064 986 5970</span>
+                <span className="font-bold">064 986 5970</span>
               </div>
-              <div className="h-4 w-px bg-white/30" />
-              <span className="text-brand-orange font-condensed text-sm">24/7 EMERGENCY LINE</span>
+              <div className="h-4 w-px bg-brand-dark/30" />
+              <span className="text-brand-orange font-condensed font-bold text-sm">24/7 EMERGENCY LINE</span>
             </div>
           </div>
         </div>
