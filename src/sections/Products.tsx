@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
 import { 
   MoveRight, 
   Zap, 
@@ -8,7 +9,9 @@ import {
   Frame,
   Scissors,
   RefreshCw,
-  Navigation
+  Navigation,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 
 const products = [
@@ -27,6 +30,7 @@ export function Products() {
   const [isVisible, setIsVisible] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,6 +49,9 @@ export function Products() {
 
     return () => observer.disconnect();
   }, []);
+
+  const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
+  const scrollNext = () => emblaApi && emblaApi.scrollNext();
 
   return (
     <section
@@ -174,28 +181,42 @@ export function Products() {
             ))}
           </div>
 
-          {/* Crucial Products */}
+          {/* Crucial Products Carousel */}
           <div className="mt-24">
             <h3 className="font-condensed text-3xl font-bold text-brand-dark mb-12 text-center">
               CRUCIAL PRODUCTS
             </h3>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                { src: '/Converyorbelt.jpg', name: 'Conveyor Belts' },
-                { src: '/idlers.jpg', name: 'Idler Sets' },
-                { src: '/industrial-conveyor-rollers.jpg', name: 'Conveyor Rollers' },
-                { src: '/pully.jpg', name: 'Conveyor Pulleys' },
-                { src: '/K-series helical bevel gearboxes.jpg', name: 'Helical Gearboxes' },
-                { src: '/Lagged-conveyor-pulley-assembly.jpg', name: 'Lagged Pulleys' },
-                { src: '/3-Roll -Throughing-Idlers-Sets.jpg', name: 'Throughing Idlers' },
-              ].map((item) => (
-                <div key={item.name} className="group bg-white border border-brand-dark/10 p-4 hover:shadow-industrial transition-all duration-300">
-                  <div className="aspect-square overflow-hidden mb-4">
-                    <img src={item.src} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                  </div>
-                  <h4 className="font-condensed text-lg font-bold text-brand-dark text-center">{item.name}</h4>
+            
+            <div className="relative max-w-7xl mx-auto">
+              <div className="overflow-hidden" ref={emblaRef}>
+                <div className="flex gap-8">
+                  {[
+                    { src: '/Converyorbelt.jpg', name: 'Conveyor Belts' },
+                    { src: '/idlers.jpg', name: 'Idler Sets' },
+                    { src: '/industrial-conveyor-rollers.jpg', name: 'Conveyor Rollers' },
+                    { src: '/pully.jpg', name: 'Conveyor Pulleys' },
+                    { src: '/K-series helical bevel gearboxes.jpg', name: 'Helical Gearboxes' },
+                    { src: '/Lagged-conveyor-pulley-assembly.jpg', name: 'Lagged Pulleys' },
+                    { src: '/3-Roll -Throughing-Idlers-Sets.jpg', name: 'Throughing Idlers' },
+                  ].map((item) => (
+                    <div key={item.name} className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_25%] min-w-0">
+                      <div className="group bg-white border border-brand-dark/10 p-4 hover:shadow-industrial transition-all duration-300">
+                        <div className="aspect-square overflow-hidden mb-4">
+                          <img src={item.src} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                        </div>
+                        <h4 className="font-condensed text-lg font-bold text-brand-dark text-center">{item.name}</h4>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+              
+              <button onClick={scrollPrev} className="absolute left-0 top-1/2 -translate-y-1/2 bg-brand-dark text-white p-2 hover:bg-brand-orange transition-colors">
+                <ChevronLeft className="h-6 w-6" />
+              </button>
+              <button onClick={scrollNext} className="absolute right-0 top-1/2 -translate-y-1/2 bg-brand-dark text-white p-2 hover:bg-brand-orange transition-colors">
+                <ChevronRight className="h-6 w-6" />
+              </button>
             </div>
           </div>
 
