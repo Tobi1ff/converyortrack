@@ -174,6 +174,31 @@ export function Products() {
             ))}
           </div>
 
+          {/* Crucial Products */}
+          <div className="mt-24">
+            <h3 className="font-condensed text-3xl font-bold text-brand-dark mb-12 text-center">
+              CRUCIAL PRODUCTS
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[
+                { src: '/Converyorbelt.jpg', name: 'Conveyor Belts' },
+                { src: '/idlers.jpg', name: 'Idler Sets' },
+                { src: '/industrial-conveyor-rollers.jpg', name: 'Conveyor Rollers' },
+                { src: '/pully.jpg', name: 'Conveyor Pulleys' },
+                { src: '/K-series helical bevel gearboxes.jpg', name: 'Helical Gearboxes' },
+                { src: '/Lagged-conveyor-pulley-assembly.jpg', name: 'Lagged Pulleys' },
+                { src: '/3-Roll -Throughing-Idlers-Sets.jpg', name: 'Throughing Idlers' },
+              ].map((item) => (
+                <div key={item.name} className="group bg-white border border-brand-dark/10 p-4 hover:shadow-industrial transition-all duration-300">
+                  <div className="aspect-square overflow-hidden mb-4">
+                    <img src={item.src} alt={item.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>
+                  <h4 className="font-condensed text-lg font-bold text-brand-dark text-center">{item.name}</h4>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* CTA */}
           <div
             className={`mt-12 text-center transition-all duration-800 ${
