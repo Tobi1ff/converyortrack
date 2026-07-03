@@ -49,16 +49,16 @@ export function Services() {
     <section
       id="services"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-brand-concrete overflow-hidden"
+      className="relative py-24 lg:py-32 bg-white overflow-hidden"
     >
       {/* Background Image */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-10">
         <img
           src="/services-bg.jpg"
           alt=""
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-concrete via-transparent to-brand-concrete" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
       </div>
 
       {/* Grain Overlay */}
@@ -69,14 +69,14 @@ export function Services() {
           {/* Section Header */}
           <div className="mb-16">
             <div
-              className={`inline-block bg-brand-orange text-brand-concrete px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
+              className={`inline-block bg-brand-dark text-white px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
             >
               WHAT WE DO
             </div>
             <h2
-              className={`font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 transition-all duration-800 ${
+              className={`font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-dark mb-6 transition-all duration-800 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
               style={{ transitionDelay: '0.1s' }}
@@ -84,7 +84,7 @@ export function Services() {
               OUR SERVICES
             </h2>
             <p
-              className={`text-lg text-gray-400 max-w-2xl transition-all duration-800 ${
+              className={`text-lg text-brand-dark/70 max-w-2xl transition-all duration-800 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
               style={{ transitionDelay: '0.2s' }}
@@ -109,27 +109,27 @@ export function Services() {
                   <div
                     className={`p-6 border-l-4 transition-all duration-300 ${
                       activeService === index
-                        ? 'bg-white/10 border-brand-orange'
-                        : 'bg-transparent border-white/20 hover:bg-white/5 hover:border-white/40'
+                        ? 'bg-brand-dark/5 border-brand-orange'
+                        : 'bg-transparent border-brand-dark/20 hover:bg-brand-dark/5 hover:border-brand-dark/40'
                     }`}
                   >
                     <div className="flex items-start gap-4">
                       <div
                         className={`w-12 h-12 flex items-center justify-center transition-all duration-300 ${
-                          activeService === index ? 'bg-brand-orange' : 'bg-white/10'
+                          activeService === index ? 'bg-brand-orange' : 'bg-brand-dark/10'
                         }`}
                       >
                         <service.icon
                           className={`h-6 w-6 transition-colors duration-300 ${
-                            activeService === index ? 'text-brand-concrete' : 'text-white'
+                            activeService === index ? 'text-white' : 'text-brand-dark'
                           }`}
                         />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-condensed text-xl font-bold text-white mb-2">
+                        <h3 className="font-condensed text-xl font-bold text-brand-dark mb-2">
                           {service.title}
                         </h3>
-                        <p className="text-gray-400 text-sm line-clamp-2">
+                        <p className="text-brand-dark/60 text-sm line-clamp-2">
                           {service.description}
                         </p>
                       </div>
@@ -146,12 +146,12 @@ export function Services() {
               }`}
               style={{ transitionDelay: '0.5s' }}
             >
-              <div className="bg-white/5 backdrop-blur-sm p-8 border border-white/10">
+              <div className="bg-brand-dark text-white p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 bg-brand-orange flex items-center justify-center">
                     {(() => {
                       const IconComponent = services[activeService].icon;
-                      return <IconComponent className="h-8 w-8 text-brand-concrete" />;
+                      return <IconComponent className="h-8 w-8 text-white" />;
                     })()}
                   </div>
                   <h3 className="font-condensed text-2xl font-bold text-white">
@@ -192,12 +192,12 @@ export function Services() {
                       href="/ConveyorTrack_MineShield_Brochure_with_Email-1.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-white text-brand-concrete px-6 py-3 font-condensed font-bold hover:bg-gray-200 transition-colors duration-300"
+                      className="bg-white text-brand-dark px-6 py-3 font-condensed font-bold hover:bg-gray-200 transition-colors duration-300"
                     >
                       DOWNLOAD BROCHURE
                     </a>
                     <button
-                      className="bg-brand-orange text-brand-concrete px-6 py-3 font-condensed font-bold hover:bg-white transition-colors duration-300"
+                      className="bg-brand-orange text-white px-6 py-3 font-condensed font-bold hover:bg-white hover:text-brand-dark transition-colors duration-300"
                       onClick={() => {
                         const contactSection = document.getElementById('contact');
                         contactSection?.scrollIntoView({ behavior: 'smooth' });
