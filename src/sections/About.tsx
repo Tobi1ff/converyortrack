@@ -107,22 +107,22 @@ export function About() {
               style={{ transitionDelay: '0.2s' }}
             >
               <p className="text-lg text-brand-dark leading-relaxed mb-6">
-                <strong className="text-brand-concrete">Conveyor Track Pty Ltd</strong> is a leading supplier of conveyor belts and provider of conveyor plant repair and maintenance services. We cater to the needs of various industries, including mining, manufacturing, and logistics.
+                <strong className="bg-brand-orange text-white px-1">Conveyor Track Pty Ltd</strong> is a leading supplier of conveyor belts and provider of conveyor plant repair and maintenance services. We cater to the needs of various industries, including mining, manufacturing, and logistics.
               </p>
               <p className="text-lg text-brand-dark leading-relaxed mb-8">
-                Founded by <strong className="text-brand-concrete">Mr. Mona Prince Mbatini</strong> (pictured right), a visionary entrepreneur with a passion for delivering exceptional quality and service, our company is committed to excellence and dedicated to making a positive impact in the industries we serve.
+                Founded by <strong className="bg-brand-orange text-white px-1">Mr. Mona Prince</strong> (pictured right), a visionary entrepreneur with a passion for delivering exceptional quality and service, our company is committed to excellence and dedicated to making a positive impact in the industries we serve.
               </p>
 
               {/* Mission & Vision */}
               <div className="space-y-6">
                 <div className="border-l-4 border-brand-orange pl-6">
-                  <h3 className="font-condensed text-xl font-bold text-brand-concrete mb-2">OUR MISSION</h3>
+                  <h3 className="font-condensed text-xl font-bold bg-brand-orange text-white inline-block px-2 mb-2">OUR MISSION</h3>
                   <p className="text-brand-dark">
                     To deliver high-quality products and services that meet the evolving needs of our customers, while ensuring a safe and reliable working environment.
                   </p>
                 </div>
                 <div className="border-l-4 border-brand-orange pl-6">
-                  <h3 className="font-condensed text-xl font-bold text-brand-concrete mb-2">OUR VISION</h3>
+                  <h3 className="font-condensed text-xl font-bold bg-brand-orange text-white inline-block px-2 mb-2">OUR VISION</h3>
                   <p className="text-brand-dark">
                     To be the preferred supplier of conveyor belt products and services in the region, recognized for our commitment to quality, reliability, and customer satisfaction.
                   </p>
@@ -184,7 +184,7 @@ export function About() {
                   <div className="w-14 h-14 bg-brand-orange/10 flex items-center justify-center mb-4">
                     <value.icon className="h-7 w-7 text-brand-orange icon-flip" />
                   </div>
-                  <h4 className="font-condensed text-xl font-bold text-brand-concrete mb-2">
+                  <h4 className="font-condensed text-xl font-bold bg-brand-orange text-white inline-block px-2 mb-2">
                     {value.title}
                   </h4>
                   <p className="text-brand-dark text-sm leading-relaxed">
