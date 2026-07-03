@@ -50,7 +50,7 @@ export function Products() {
     <section
       id="products"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-brand-concrete overflow-hidden"
+      className="relative py-24 lg:py-32 bg-white overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0 opacity-5">
@@ -63,7 +63,7 @@ export function Products() {
 
       {/* Grid Lines SVG */}
       <svg
-        className="absolute inset-0 w-full h-full pointer-events-none opacity-10"
+        className="absolute inset-0 w-full h-full pointer-events-none opacity-5"
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
@@ -78,7 +78,7 @@ export function Products() {
               fill="none"
               stroke="currentColor"
               strokeWidth="0.5"
-              className="text-brand-concrete"
+              className="text-brand-dark"
             />
           </pattern>
         </defs>
@@ -90,14 +90,14 @@ export function Products() {
           {/* Section Header */}
           <div className="mb-16 text-center">
             <div
-              className={`inline-block bg-brand-orange text-brand-concrete px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
+              className={`inline-block bg-brand-dark text-white px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
             >
               WHAT WE SUPPLY
             </div>
             <h2
-              className={`font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-concrete mb-6 transition-all duration-800 ${
+              className={`font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-dark mb-6 transition-all duration-800 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
               style={{ transitionDelay: '0.1s' }}
@@ -105,7 +105,7 @@ export function Products() {
               OUR PRODUCTS
             </h2>
             <p
-              className={`text-lg text-brand-dark max-w-2xl mx-auto transition-all duration-800 ${
+              className={`text-lg text-brand-dark/70 max-w-2xl mx-auto transition-all duration-800 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
               style={{ transitionDelay: '0.2s' }}
@@ -119,7 +119,7 @@ export function Products() {
             {products.map((product, index) => (
               <div
                 key={product.name}
-                className={`group relative bg-white shadow-industrial overflow-hidden transition-all duration-500 ${
+                className={`group relative bg-white border border-brand-dark/10 shadow-sm overflow-hidden transition-all duration-500 ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
                 }`}
                 style={{ transitionDelay: `${0.3 + index * 0.05}s` }}
@@ -137,19 +137,19 @@ export function Products() {
                 <div className="relative p-8">
                   <div
                     className={`w-16 h-16 flex items-center justify-center mb-6 transition-all duration-300 ${
-                      hoveredIndex === index ? 'bg-brand-concrete' : 'bg-brand-orange/10'
+                      hoveredIndex === index ? 'bg-brand-dark' : 'bg-brand-dark/5'
                     }`}
                   >
                     <product.icon
                       className={`h-8 w-8 transition-colors duration-300 ${
-                        hoveredIndex === index ? 'text-brand-orange' : 'text-brand-orange'
+                        hoveredIndex === index ? 'text-brand-orange' : 'text-brand-dark'
                       }`}
                     />
                   </div>
 
                   <h3
                     className={`font-condensed text-xl font-bold mb-2 transition-colors duration-300 ${
-                      hoveredIndex === index ? 'text-brand-concrete' : 'text-brand-concrete'
+                      hoveredIndex === index ? 'text-white' : 'text-brand-dark'
                     }`}
                   >
                     {product.name}
@@ -157,7 +157,7 @@ export function Products() {
 
                   <p
                     className={`text-sm transition-colors duration-300 ${
-                      hoveredIndex === index ? 'text-brand-concrete/80' : 'text-brand-dark'
+                      hoveredIndex === index ? 'text-white/80' : 'text-brand-dark/70'
                     }`}
                   >
                     {product.description}
@@ -165,7 +165,7 @@ export function Products() {
 
                   {/* Animated Line */}
                   <div
-                    className={`absolute bottom-0 left-0 h-1 bg-brand-concrete transition-all duration-500 ${
+                    className={`absolute bottom-0 left-0 h-1 bg-brand-dark transition-all duration-500 ${
                       hoveredIndex === index ? 'w-full' : 'w-0'
                     }`}
                   />
@@ -185,7 +185,7 @@ export function Products() {
               Need a specific part? We can source specialized components for your equipment.
             </p>
             <button
-              className="inline-flex items-center gap-2 bg-brand-concrete text-white px-8 py-4 font-condensed font-bold hover:bg-brand-orange hover:text-brand-concrete transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-brand-dark text-white px-8 py-4 font-condensed font-bold hover:bg-brand-orange hover:text-white transition-all duration-300"
               onClick={() => {
                 const contactSection = document.getElementById('contact');
                 contactSection?.scrollIntoView({ behavior: 'smooth' });
