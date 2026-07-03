@@ -96,11 +96,11 @@ export function Contact() {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-brand-concrete overflow-hidden"
+      className="relative py-24 lg:py-32 bg-white overflow-hidden"
     >
       {/* Scanline Reveal Effect */}
       <div
-        className={`absolute inset-0 bg-brand-concrete transition-all duration-1000 ${
+        className={`absolute inset-0 bg-white transition-all duration-1000 ${
           isVisible ? 'clip-path-full' : 'clip-path-hidden'
         }`}
         style={{
@@ -117,8 +117,8 @@ export function Contact() {
               0deg,
               transparent,
               transparent 2px,
-              rgba(255, 161, 46, 0.1) 2px,
-              rgba(255, 161, 46, 0.1) 4px
+              rgba(0, 0, 0, 0.1) 2px,
+              rgba(0, 0, 0, 0.1) 4px
             )`,
           }}
         />
@@ -132,14 +132,14 @@ export function Contact() {
           {/* Section Header */}
           <div className="mb-16">
             <div
-              className={`inline-block bg-brand-orange text-brand-concrete px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
+              className={`inline-block bg-brand-dark text-white px-4 py-1 font-condensed font-bold text-sm mb-4 transition-all duration-600 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
               }`}
             >
               GET IN TOUCH
             </div>
             <h2
-              className={`font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 transition-all duration-800 ${
+              className={`font-condensed text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-dark mb-6 transition-all duration-800 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
               style={{ transitionDelay: '0.1s' }}
@@ -156,7 +156,7 @@ export function Contact() {
               }`}
               style={{ transitionDelay: '0.2s' }}
             >
-              <p className="text-gray-400 mb-8 text-lg">
+              <p className="text-brand-dark/70 mb-8 text-lg">
                 For more information about our products and services, please contact us. Our team is ready to assist you.
               </p>
 
@@ -171,20 +171,20 @@ export function Contact() {
                   >
                     <div
                       className={`w-12 h-12 flex items-center justify-center flex-shrink-0 ${
-                        info.highlight ? 'bg-brand-orange' : 'bg-white/10'
+                        info.highlight ? 'bg-brand-orange' : 'bg-brand-dark/5'
                       }`}
                     >
                       <info.icon
                         className={`h-5 w-5 ${
-                          info.highlight ? 'text-brand-concrete' : 'text-brand-orange'
+                          info.highlight ? 'text-white' : 'text-brand-dark'
                         }`}
                       />
                     </div>
                     <div>
-                      <div className="text-gray-500 text-sm mb-1">{info.label}</div>
+                      <div className="text-brand-dark/60 text-sm mb-1">{info.label}</div>
                       <div
                         className={`font-medium ${
-                          info.highlight ? 'text-brand-orange text-lg' : 'text-white'
+                          info.highlight ? 'text-brand-orange text-lg' : 'text-brand-dark'
                         }`}
                       >
                         {info.value}
@@ -196,19 +196,19 @@ export function Contact() {
 
               {/* Registration Info */}
               <div
-                className={`mt-12 pt-8 border-t border-white/10 transition-all duration-800 ${
+                className={`mt-12 pt-8 border-t border-brand-dark/10 transition-all duration-800 ${
                   isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
                 }`}
                 style={{ transitionDelay: '0.7s' }}
               >
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <div className="text-gray-500 text-sm mb-1">CK Number</div>
-                    <div className="text-white font-mono">2025/194588/07</div>
+                    <div className="text-brand-dark/60 text-sm mb-1">CK Number</div>
+                    <div className="text-brand-dark font-mono">2025/194588/07</div>
                   </div>
                   <div>
-                    <div className="text-gray-500 text-sm mb-1">Tax Number</div>
-                    <div className="text-white font-mono">9068010306</div>
+                    <div className="text-brand-dark/60 text-sm mb-1">Tax Number</div>
+                    <div className="text-brand-dark font-mono">9068010306</div>
                   </div>
                 </div>
               </div>
@@ -224,7 +224,7 @@ export function Contact() {
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className="bg-white/5 backdrop-blur-sm p-8 border border-white/10"
+                className="bg-brand-dark p-8"
               >
                 <h3 className="font-condensed text-2xl font-bold text-white mb-6">
                   SEND US A MESSAGE
@@ -239,7 +239,7 @@ export function Contact() {
                       id="name"
                       name="name"
                       placeholder="Your name"
-                      className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-orange focus:ring-brand-orange"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-brand-orange focus:ring-brand-orange"
                       required
                     />
                   </div>
@@ -252,7 +252,7 @@ export function Contact() {
                       name="email"
                       type="email"
                       placeholder="your@email.com"
-                      className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-orange focus:ring-brand-orange"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-brand-orange focus:ring-brand-orange"
                       required
                     />
                   </div>
@@ -267,7 +267,7 @@ export function Contact() {
                     name="phone"
                     type="tel"
                     placeholder="Your phone number"
-                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-orange focus:ring-brand-orange"
+                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-brand-orange focus:ring-brand-orange"
                   />
                 </div>
 
@@ -280,7 +280,7 @@ export function Contact() {
                     name="message"
                     placeholder="How can we help you?"
                     rows={5}
-                    className="bg-white/5 border-white/20 text-white placeholder:text-gray-600 focus:border-brand-orange focus:ring-brand-orange resize-none"
+                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-500 focus:border-brand-orange focus:ring-brand-orange resize-none"
                     required
                   />
                 </div>
@@ -290,10 +290,10 @@ export function Contact() {
                   disabled={isSubmitting || isSubmitted}
                   className={`w-full py-6 font-condensed font-bold text-lg transition-all duration-300 ${
                     isSubmitted
-                      ? 'bg-green-500 hover:bg-green-500 text-white'
+                      ? 'bg-green-600 hover:bg-green-700 text-white'
                       : hasError
-                      ? 'bg-red-500 hover:bg-red-500 text-white'
-                      : 'bg-brand-orange hover:bg-white text-brand-concrete'
+                      ? 'bg-red-600 hover:bg-red-700 text-white'
+                      : 'bg-brand-orange hover:bg-white text-white hover:text-brand-dark'
                   }`}
                 >
                   {isSubmitting ? (
