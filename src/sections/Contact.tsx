@@ -27,6 +27,11 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
+    value: 'info@conveyortrack.co.za',
+  },
+  {
+    icon: Mail,
+    label: 'Quotations',
     value: 'quotations@conveyortrack.co.za',
   },
   {
